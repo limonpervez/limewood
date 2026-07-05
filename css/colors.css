@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Limewood Agency — Design Tokens
+   Refined lemon / lime / wood palette for a professional look.
+   ========================================================================== */
+
+:root {
+    /* Brand — Lemon (primary accent, used sparingly) */
+    --lemon-50:  #FEFAE8;
+    --lemon-100: #FDF3C4;
+    --lemon-300: #F9DE6B;
+    --lemon-500: #F5C518;   /* primary CTA */
+    --lemon-600: #D9A90D;
+    --lemon-700: #B08A0A;
+
+    /* Brand — Lime / Leaf (secondary accent) */
+    --lime-50:  #F3F9EE;
+    --lime-100: #E3F1D6;
+    --lime-300: #A3D283;
+    --lime-500: #55A630;
+    --lime-600: #427F25;
+    --lime-700: #33621D;
+
+    /* Wood (warm neutrals for borders & surfaces) */
+    --wood-50:  #FAF7EF;
+    --wood-100: #F1ECDD;
+    --wood-200: #E5DEC9;
+    --wood-300: #D2C7A8;
+    --wood-500: #A08F6A;
+    --wood-700: #6B5D42;
+
+    /* Ink (deep green-charcoal text) */
+    --ink-900: #131C13;
+    --ink-800: #1D2A1D;
+    --ink-600: #3D4A3D;
+    --ink-400: #5F6E5F;
+    --ink-300: #8A968A;
+
+    /* Surfaces */
+    --bg:            #FDFBF4;   /* warm cream page background */
+    --surface:       #FFFFFF;
+    --surface-warm:  #FBF8EE;
+    --surface-dark:  #16241A;   /* footer / dark sections */
+
+    /* Semantic aliases */
+    --color-primary:        var(--lemon-500);
+    --color-primary-hover:  var(--lemon-600);
+    --color-accent:         var(--lime-500);
+    --color-accent-hover:   var(--lime-600);
+    --text-primary:         var(--ink-900);
+    --text-secondary:       var(--ink-400);
+    --border-color:         var(--wood-100);
+    --border-strong:        var(--wood-200);
+
+    /* Typography */
+    --font-display: 'Plus Jakarta Sans', -apple-system, 'Segoe UI', sans-serif;
+    --font-body:    'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+    /* Shadows (soft, layered) */
+    --shadow-xs: 0 1px 2px rgba(19, 28, 19, 0.05);
+    --shadow-sm: 0 1px 3px rgba(19, 28, 19, 0.06), 0 4px 12px rgba(19, 28, 19, 0.04);
+    --shadow-md: 0 2px 6px rgba(19, 28, 19, 0.06), 0 12px 28px rgba(19, 28, 19, 0.08);
+    --shadow-lg: 0 4px 12px rgba(19, 28, 19, 0.08), 0 24px 48px rgba(19, 28, 19, 0.12);
+    --shadow-lemon: 0 8px 24px rgba(245, 197, 24, 0.28);
+
+    /* Spacing scale */
+    --sp-1: 4px;
+    --sp-2: 8px;
+    --sp-3: 12px;
+    --sp-4: 16px;
+    --sp-5: 24px;
+    --sp-6: 32px;
+    --sp-7: 48px;
+    --sp-8: 64px;
+    --sp-9: 96px;
+    --sp-10: 128px;
+
+    /* Radii */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 999px;
+
+    /* Motion */
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition: 0.25s var(--ease);
+
+    /* Layout */
+    --container: 1160px;
+    --header-h: 72px;
+}

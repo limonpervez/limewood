@@ -1,0 +1,279 @@
+/* ==========================================================================
+   Limewood Agency — Responsive
+   ========================================================================== */
+
+/* ---------- ≤ 1024px (small laptop / tablet landscape) ---------- */
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero-inner {
+        gap: var(--sp-7);
+    }
+
+    .phone {
+        width: 270px;
+    }
+}
+
+/* ---------- ≤ 860px (tablet portrait) ---------- */
+@media (max-width: 860px) {
+    .section {
+        padding: var(--sp-8) 0;
+    }
+
+    /* Mobile navigation */
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .nav {
+        position: fixed;
+        top: var(--header-h);
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: var(--sp-3) var(--sp-5) var(--sp-5);
+        transform: translateY(-12px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: transform var(--transition), opacity var(--transition),
+                    visibility var(--transition);
+    }
+
+    .nav-open .nav {
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .nav-link {
+        padding: 14px 4px;
+        font-size: 16px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+
+    .nav-link.active {
+        color: var(--lime-600);
+    }
+
+    .nav-cta {
+        margin: var(--sp-4) 0 0;
+        justify-content: center;
+    }
+
+    /* Hero stacks */
+    .hero {
+        padding: var(--sp-7) 0;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: var(--sp-7);
+    }
+
+    .hero .lead {
+        max-width: 100%;
+    }
+
+    .hero-stats {
+        gap: var(--sp-6);
+    }
+
+    .float-chip {
+        display: none;
+    }
+
+    .phone {
+        transform: none;
+    }
+
+    /* Featured */
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-7);
+    }
+
+    /* Apps page */
+    .app-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .app-showcase-body {
+        padding: var(--sp-6) var(--sp-5);
+    }
+
+    .spec-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .soon-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Team */
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--sp-4);
+    }
+
+    .founder-card {
+        grid-column: span 3;
+        grid-template-rows: none;
+        grid-template-columns: 200px 1fr;
+    }
+
+    .founder-card .founder-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-6);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--sp-6);
+    }
+
+    .cta-band {
+        padding: var(--sp-7) var(--sp-5);
+    }
+}
+
+/* ---------- ≤ 560px (mobile) ---------- */
+@media (max-width: 560px) {
+    body {
+        font-size: 15.5px;
+    }
+
+    .container {
+        padding: 0 var(--sp-4);
+    }
+
+    .header-inner {
+        padding: 0 var(--sp-4);
+    }
+
+    .section {
+        padding: var(--sp-7) 0;
+    }
+
+    .section-head {
+        margin-bottom: var(--sp-6);
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-stats {
+        gap: var(--sp-5);
+    }
+
+    .stat .stat-num {
+        font-size: 21px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .phone {
+        width: 250px;
+    }
+
+    .featured-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .featured-actions .btn {
+        width: 100%;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .founder-card {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+    }
+
+    .founder-card .team-photo {
+        min-height: 260px;
+    }
+
+    .form-card {
+        padding: var(--sp-5);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-6);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-legal {
+        flex-wrap: wrap;
+        gap: var(--sp-4);
+    }
+
+    .cta-actions .btn {
+        width: 100%;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ---------- Accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
