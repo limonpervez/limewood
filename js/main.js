@@ -3,6 +3,14 @@
 (function () {
     'use strict';
 
+    // ----- Clean URL in the address bar (/index.html → /, /apps.html → /apps) -----
+    if (/\.html$/.test(window.location.pathname) && window.history.replaceState) {
+        var clean = window.location.pathname
+            .replace(/index\.html$/, '')
+            .replace(/\.html$/, '');
+        window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+
     // ----- Header scroll state -----
     var header = document.querySelector('.header');
     function onScroll() {
