@@ -33,12 +33,13 @@
     }
 
     // ----- Active nav link -----
-    var current = window.location.pathname.split('/').pop() || 'index.html';
+    var current = window.location.pathname
+        .split('/').pop()
+        .replace(/\.html$/, '')
+        .replace(/^index$/, '');
     document.querySelectorAll('.nav-link').forEach(function (link) {
-        var href = link.getAttribute('href');
-        if (href === current) {
-            link.classList.add('active');
-        }
+        var href = link.getAttribute('href').replace(/^\//, '');
+        link.classList.toggle('active', href === current);
     });
 
     // ----- Scroll reveal -----
