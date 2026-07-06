@@ -106,9 +106,10 @@
 
                 <div class="form-card reveal">
                     <h2>Send a message</h2>
-                    <p class="form-sub">Fill in the form and it will open in your email app, addressed to us.</p>
+                    <p class="form-sub">Fill in the form and your message lands straight in our inbox. We usually reply within a day.</p>
 
                     <form id="contactForm">
+                        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;overflow:hidden;">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Your name</label>
@@ -134,6 +135,8 @@
                             Send message
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                         </button>
+
+                        <p class="form-status" id="formStatus" role="status" hidden></p>
                     </form>
                     <p class="form-note">We never share your details with anyone. See our <a href="privacy.html" style="color: var(--lime-600);">Privacy Policy</a>.</p>
                 </div>

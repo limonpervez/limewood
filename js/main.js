@@ -66,18 +66,74 @@
         yearEl.textContent = new Date().getFullYear();
     }
 
-    // ----- Contact form (static site: opens the user's mail client) -----
+    // ----- Disabled buttons (e.g. "coming soon") -----
+    document.querySelectorAll('a[aria-disabled="true"]').forEach(function (link) {
+        link.addEventListener('click', function (e) { e.preventDefault(); });
+    });
+
+    // ----- Contact form (static site: sends via FormSubmit) -----
     var form = document.getElementById('contactForm');
     if (form) {
+        var statusEl = document.getElementById('formStatus');
+        var submitBtn = form.querySelector('button[type="submit"]');
+
+        function showStatus(type, text) {
+            if (!statusEl) return;
+            statusEl.textContent = text;
+            statusEl.className = 'form-status ' + type;
+            statusEl.hidden = false;
+        }
+
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            var name = encodeURIComponent(form.name.value.trim());
-            var email = encodeURIComponent(form.email.value.trim());
-            var subject = encodeURIComponent(form.subject.value.trim());
-            var message = encodeURIComponent(form.message.value.trim());
-            var body = message + '%0D%0A%0D%0A—%0D%0A' + name + '%0D%0A' + email;
-            window.location.href =
-                'mailto:hello@limewood.app?subject=' + subject + '&body=' + body;
+
+            // Honeypot: silently drop bot submissions
+            if (form._honey && form._honey.value) return;
+
+            var payload = {
+                name: form.name.value.trim(),
+                email: form.email.value.trim(),
+                subject: form.subject.value.trim(),
+                message: form.message.value.trim(),
+                _subject: 'Limewood contact: ' + form.subject.value.trim(),
+                _template: 'table'
+            };
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.firstChild.textContent = 'Sending… ';
+            }
+            if (statusEl) statusEl.hidden = true;
+
+            fetch('https://formsubmit.co/ajax/limonpervez@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+                .then(function (res) {
+                    if (!res.ok) throw new Error('Request failed');
+                    return res.json();
+                })
+                .then(function (data) {
+                    if (data.success === true || data.success === 'true') {
+                        showStatus('success', "Message sent! We'll get back to you within a day.");
+                        form.reset();
+                    } else {
+                        throw new Error(data.message || 'Not delivered');
+                    }
+                })
+                .catch(function () {
+                    showStatus('error', "Something went wrong. Please email us directly at hello@limewood.app.");
+                })
+                .finally(function () {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.firstChild.textContent = 'Send message ';
+                    }
+                });
         });
     }
 })();
