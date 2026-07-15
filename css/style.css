@@ -182,6 +182,18 @@ h1, h2, h3, h4 {
     box-shadow: var(--shadow-md);
 }
 
+/* "Coming soon" buttons: look present but inert, and never navigate. */
+.btn.is-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn.is-disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 .btn-outline {
     background: transparent;
     color: var(--ink-900);
@@ -955,7 +967,7 @@ h1, h2, h3, h4 {
 
 .badge-soon {
     background: var(--lemon-100);
-    color: var(--lemon-700);
+    color: #6B5200; /* darkened from lemon-700 to clear WCAG AA (6.6:1 on lemon-100) */
 }
 
 .badge-live {

@@ -204,6 +204,12 @@
         grid-template-columns: 1fr;
     }
 
+    /* App-showcase feature lists carry an inline 2-column grid; collapse to
+       one column on phones so titles stop wrapping mid-word. */
+    .feature-list {
+        grid-template-columns: 1fr !important;
+    }
+
     .phone {
         width: 250px;
     }
