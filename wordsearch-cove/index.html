@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search Cove — A cozy word search | Limewood</title>
+    <meta name="description" content="Word Search Cove is a calm, ad-free word search you can actually unwind with. Pick a category, drag to find the words, no timers and no coins to grind.">
+
+    <link rel="canonical" href="https://limewood.app/wordsearch-cove">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Word Search Cove — A cozy word search | Limewood">
+    <meta property="og:description" content="Word Search Cove is a calm, ad-free word search you can actually unwind with. Pick a category, drag to find the words, no timers and no coins to grind.">
+    <meta property="og:url" content="https://limewood.app/wordsearch-cove">
+    <meta property="og:image" content="https://limewood.app/apple-touch-icon.png">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <style>.wsc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin-top:2px;}.wsc-t{aspect-ratio:1;border-radius:7px;background:#EFE3C6;color:#243330;font-family:var(--font-display);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 0 rgba(10,21,18,.35);}.wsc-a{background:#E8A33D;} .wsc-g{background:#A9C6B4;}.wsc-chip{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.06em;padding:5px 11px;border-radius:999px;border:1px solid rgba(232,163,61,.35);color:#B9BFA9;}.wsc-chip.done{color:rgba(185,191,169,.5);text-decoration:line-through;text-decoration-color:#E8A33D;text-decoration-thickness:2px;border-color:transparent;}</style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="brand" aria-label="Limewood home"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="22" r="15" fill="#F5C518"/><circle cx="20" cy="22" r="15" stroke="#131C13" stroke-width="2.5"/><path d="M20 7C20 7 22 2.5 27 3.5" stroke="#131C13" stroke-width="2.5" stroke-linecap="round"/><path d="M24 4.5C28.5 3 32 5.5 32 5.5C32 5.5 29.5 9.5 25 9.5C23 9.5 22 8.5 22 8.5" fill="#55A630"/><path d="M24 4.5C28.5 3 32 5.5 32 5.5C32 5.5 29.5 9.5 25 9.5C23 9.5 22 8.5 22 8.5" stroke="#131C13" stroke-width="2"/><path d="M14 19C15 16 17 14.5 19.5 14" stroke="#FEFAE8" stroke-width="2.5" stroke-linecap="round"/></svg>
+                Limewood
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+            <nav class="nav" aria-label="Main navigation">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/apps" class="nav-link">Apps</a>
+                <a href="/about" class="nav-link">Team</a>
+                <a href="/contact" class="nav-link">Contact</a>
+                <a href="/apps" class="btn btn-primary nav-cta">All apps</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section featured" style="border-top:none;">
+            <div class="container">
+                <a href="/apps" class="detail-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> All apps</a>
+
+                <div class="featured-grid">
+                    <div>
+                        <span class="badge badge-soon">Launching soon &middot; Google Play</span>
+                        <div class="app-identity" style="margin-top: var(--sp-5);">
+                            <div class="app-tile" style="background: linear-gradient(135deg, #E8A33D 0%, #9A6413 100%);">&#127983;</div>
+                            <div>
+                                <h3>Word Search Cove</h3>
+                                <div class="app-sub">A cozy, ad-free word search &middot; Android</div>
+                            </div>
+                        </div>
+                        <p class="lead">A calm, lantern-lit word search you can actually unwind with. Pick a category, drag to find the words, and watch them light up in warm colour. No timers rushing you, no ads interrupting you, no coins to grind. Most word games are built to sell you hints; this one is built the opposite way.</p>
+
+                        <div class="fact-row">
+                            <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Free</span>
+                            <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.73 21a2 2 0 0 1-3.46 0"/><path d="M18.63 13A17.9 17.9 0 0 1 18 8"/><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"/><path d="M18 8a6 6 0 0 0-9.33-5"/><line x1="1" y1="1" x2="23" y2="23"/></svg> No ads</span>
+                            <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg> Cozy &amp; calm</span>
+                        </div>
+
+                        <div class="featured-actions">
+                            <span class="btn btn-dark btn-lg is-disabled" role="button" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.8-9.9v-.2L3.7 1.7l-.1.1z"/><path d="M16.8 15.7l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3l-3.9 2.2h-.1z"/><path d="M16.9 15.6L13.5 12.2 3.6 22.1c.4.4 1 .4 1.7 0l11.6-6.5"/><path d="M16.9 8.8L5.3 2.3c-.7-.4-1.3-.3-1.7 0l9.9 9.9 3.4-3.4z"/></svg>
+                                Google Play &mdash; coming soon
+                            </span>
+                            <a href="/contact" class="btn-link">
+                                Join the waitlist <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="phone-wrap reveal in">
+                                                <div class="phone" aria-hidden="true">
+                            <div class="phone-screen" style="background:#132420;">
+                                <div class="phone-notch"></div>
+                                <div class="app-head" style="border-color: rgba(232,163,61,.16);">
+                                    <div class="app-title" style="color:#F3EDDF;"><span class="fox">🏮</span> Word Search Cove</div>
+                                    <span style="font-family:var(--font-display); font-weight:800; font-size:11px; color:#E8A33D;">💡 30</span>
+                                </div>
+
+                                <div style="background:#1B2E29; border:1px solid rgba(232,163,61,.22); border-radius:16px; padding:12px;">
+                                    <div class="wsc-grid">
+                                        <div class="wsc-t">C</div><div class="wsc-t">L</div><div class="wsc-t">E</div><div class="wsc-t">A</div><div class="wsc-t">F</div><div class="wsc-t">T</div>
+                                        <div class="wsc-t">R</div><div class="wsc-t">O</div><div class="wsc-t">S</div><div class="wsc-t">E</div><div class="wsc-t">M</div><div class="wsc-t wsc-g">D</div>
+                                        <div class="wsc-t wsc-a">B</div><div class="wsc-t wsc-a">I</div><div class="wsc-t wsc-a">S</div><div class="wsc-t wsc-a">O</div><div class="wsc-t wsc-a">N</div><div class="wsc-t wsc-g">U</div>
+                                        <div class="wsc-t">T</div><div class="wsc-t">I</div><div class="wsc-t">G</div><div class="wsc-t">E</div><div class="wsc-t">R</div><div class="wsc-t wsc-g">C</div>
+                                        <div class="wsc-t">P</div><div class="wsc-t">A</div><div class="wsc-t">N</div><div class="wsc-t">D</div><div class="wsc-t">A</div><div class="wsc-t wsc-g">K</div>
+                                        <div class="wsc-t">W</div><div class="wsc-t">O</div><div class="wsc-t">L</div><div class="wsc-t">F</div><div class="wsc-t">O</div><div class="wsc-t">X</div>
+                                    </div>
+                                </div>
+
+                                <div style="display:flex; gap:7px; justify-content:center; flex-wrap:wrap; margin-top:14px;">
+                                    <span class="wsc-chip done">BISON</span>
+                                    <span class="wsc-chip done">DUCK</span>
+                                    <span class="wsc-chip">TIGER</span>
+                                    <span class="wsc-chip">PANDA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal in">
+                    <span class="eyebrow">What it does</span>
+                    <h2 class="display-lg">A word game that respects you</h2>
+                    <p class="lead">Everything here is built to help you relax, not to squeeze coins out of you.</p>
+                </div>
+
+                <div class="deep">
+                    <div class="deep-item reveal in">
+                        <div class="deep-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+                        <h3>No timers, ever</h3>
+                        <p>Play at your own pace. Nothing counts down, nothing rushes you, nothing punishes you for taking a break.</p>
+                    </div>
+                    <div class="deep-item reveal in">
+                        <div class="deep-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.73 21a2 2 0 0 1-3.46 0"/><path d="M18.63 13A17.9 17.9 0 0 1 18 8"/><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"/><path d="M18 8a6 6 0 0 0-9.33-5"/><line x1="1" y1="1" x2="23" y2="23"/></svg></div>
+                        <h3>Zero ads</h3>
+                        <p>No banners, no pop-ups, no rewarded videos. There is no advertising code in the app at all.</p>
+                    </div>
+                    <div class="deep-item reveal in">
+                        <div class="deep-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></div>
+                        <h3>Warm, tactile feedback</h3>
+                        <p>Found words light up in lantern colour with a satisfying settle. It is meant to feel good in the hand.</p>
+                    </div>
+                    <div class="deep-item reveal in">
+                        <div class="deep-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+                        <h3>Handmade categories</h3>
+                        <p>Themed word lists to pick from, each hand-built so the puzzles stay fresh and coherent.</p>
+                    </div>
+                    <div class="deep-item reveal in">
+                        <div class="deep-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                        <h3>Free to play</h3>
+                        <p>The whole game is free. No coins to grind, no hints priced to make you give up and pay.</p>
+                    </div>
+                    <div class="deep-item reveal in">
+                        <div class="deep-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+                        <h3>Made to unwind</h3>
+                        <p>A cozy corner of your phone for a quiet ten minutes, not another game demanding your attention.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured">
+            <div class="container featured-grid">
+                <div class="reveal in">
+                    <span class="eyebrow">Built the opposite way</span>
+                    <h2 class="display-lg" style="margin:var(--sp-4) 0;">Most word games are built to sell you hints</h2>
+                    <p class="lead">Open almost any word game and the design goal is obvious: make the puzzle just annoying enough that you buy a hint. Timers, coin counters, energy meters, ads between every level.</p>
+                    <p class="lead" style="margin-top:var(--sp-4);">Word Search Cove has none of that. It is built to be the calm ten minutes at the end of your day, and nothing in it is designed to interrupt that or charge you for it.</p>
+                    <div class="featured-actions">
+                        <a href="/wordsearch-cove/privacy" class="btn-link">
+                            Read the privacy policy <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="spec-grid" style="margin:0;">
+                    <div class="spec-cell">
+                        <div class="s-label">Platform</div>
+                        <div class="s-value">Android</div>
+                    </div>
+                    <div class="spec-cell">
+                        <div class="s-label">Price</div>
+                        <div class="s-value">Free</div>
+                    </div>
+                    <div class="spec-cell">
+                        <div class="s-label">Ads</div>
+                        <div class="s-value">None</div>
+                    </div>
+                    <div class="spec-cell">
+                        <div class="s-label">Status</div>
+                        <div class="s-value">Coming soon</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head center reveal in">
+                    <span class="eyebrow">Good to know</span>
+                    <h2 class="display-lg">Questions, answered</h2>
+                </div>
+
+                <div class="faq reveal in">
+                    <details>
+                        <summary>Is it really free?</summary>
+                        <p>Yes. The whole game is free to play, with no ads and no coins to grind.</p>
+                    </details>
+                    <details>
+                        <summary>Are there ads?</summary>
+                        <p>None at all. There is no advertising code in the app, so there is nothing to switch on later either.</p>
+                    </details>
+                    <details>
+                        <summary>Do I need an account?</summary>
+                        <p>No. There is no sign-up and no login. Just open it and start playing.</p>
+                    </details>
+                    <details>
+                        <summary>When is it coming out?</summary>
+                        <p>It is in final testing for Google Play. Join the waitlist and we will let you know the moment it is live.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="cta-band reveal in">
+                    <h2 class="display-lg">A calmer word search is coming</h2>
+                    <p>Word Search Cove launches soon on Google Play. Free, ad-free, and in no hurry.</p>
+                    <div class="cta-actions">
+                        <a href="/contact" class="btn btn-primary btn-lg">Join the waitlist</a>
+                        <a href="/apps" class="btn btn-outline btn-lg">See all apps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="/" class="brand"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="22" r="15" fill="#F5C518"/><circle cx="20" cy="22" r="15" stroke="#0D160D" stroke-width="2.5"/><path d="M20 7C20 7 22 2.5 27 3.5" stroke="#FDFBF4" stroke-width="2.5" stroke-linecap="round"/><path d="M24 4.5C28.5 3 32 5.5 32 5.5C32 5.5 29.5 9.5 25 9.5C23 9.5 22 8.5 22 8.5" fill="#55A630"/><path d="M14 19C15 16 17 14.5 19.5 14" stroke="#FEFAE8" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        Limewood
+                    </a>
+                    <p class="footer-tagline">An independent app studio building simple, private, beautifully-crafted mobile apps.</p>
+                </div>
+                <div>
+                    <h4>Studio</h4>
+                    <div class="footer-links">
+                        <a href="/">Home</a>
+                        <a href="/apps">Our apps</a>
+                        <a href="/about">Team</a>
+                        <a href="/contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Apps</h4>
+                    <div class="footer-links">
+                        <a href="/stillwaters">Stillwaters</a>
+                        <a href="/arrow-escape">Arrow Escape</a>
+                        <a href="/riddle-trail">Riddle Trail</a>
+                        <a href="/wordsearch-cove">Word Search Cove</a>
+                        <a href="/ascend">Gym Coach</a>
+                        <a href="/renewfox">Renewfox</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="/privacy">Privacy Policy</a>
+                        <a href="/terms">Terms of Service</a>
+                        <a href="/disclaimer">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span id="year">2026</span> Limewood. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                    <a href="mailto:hello@limewood.app">hello@limewood.app</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

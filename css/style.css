@@ -1525,3 +1525,144 @@ h1, h2, h3, h4 {
 .text-center { text-align: center; }
 .mt-6 { margin-top: var(--sp-6); }
 .mb-6 { margin-bottom: var(--sp-6); }
+
+/* ==========================================================================
+   App detail pages (/renewfox, /stillwaters, ...)
+   ========================================================================== */
+
+/* Back-to-apps link above the app hero */
+.detail-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink-400);
+    margin-bottom: var(--sp-5);
+    transition: color var(--transition), gap var(--transition);
+}
+.detail-back:hover { color: var(--ink-900); gap: 11px; }
+.detail-back svg { width: 16px; height: 16px; }
+
+/* Chip row of quick facts under the hero description */
+.fact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: var(--sp-5) 0 var(--sp-6);
+}
+.fact {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-800);
+    background: var(--surface-warm);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-full);
+    padding: 7px 14px;
+}
+.fact svg { width: 15px; height: 15px; color: var(--lime-600); }
+
+/* Screenshot gallery — real device-framed portraits, horizontal scroll-snap */
+.shots-section { background: var(--surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+.shots {
+    display: flex;
+    gap: var(--sp-5);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: var(--sp-4) 2px var(--sp-6);
+    margin: 0 calc(-1 * var(--sp-4));
+    padding-left: var(--sp-4);
+    padding-right: var(--sp-4);
+    scrollbar-width: thin;
+    scrollbar-color: var(--wood-300) transparent;
+}
+.shots::-webkit-scrollbar { height: 8px; }
+.shots::-webkit-scrollbar-thumb { background: var(--wood-300); border-radius: 99px; }
+.shots::-webkit-scrollbar-track { background: transparent; }
+
+.device {
+    flex: 0 0 auto;
+    width: 240px;
+    scroll-snap-align: center;
+    border-radius: 30px;
+    padding: 9px;
+    background: linear-gradient(160deg, #1c1c1e 0%, #000 100%);
+    box-shadow: var(--shadow-lg);
+}
+.device img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    background: var(--surface-warm);
+}
+.shot-caption {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-400);
+    margin-top: var(--sp-3);
+    font-weight: 500;
+}
+
+/* Deep-dive feature blocks (alternating rows) */
+.deep {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--sp-6);
+    margin-top: var(--sp-7);
+}
+.deep-item {
+    padding: var(--sp-6);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+}
+.deep-item .deep-icon {
+    width: 42px; height: 42px;
+    display: grid; place-items: center;
+    border-radius: var(--radius-md);
+    background: var(--lime-50);
+    color: var(--lime-600);
+    margin-bottom: var(--sp-4);
+}
+.deep-item .deep-icon svg { width: 22px; height: 22px; }
+.deep-item h3 { font-size: 18px; margin-bottom: 6px; }
+.deep-item p { font-size: 15px; color: var(--ink-600); line-height: 1.6; }
+
+/* FAQ */
+.faq { max-width: 760px; margin: var(--sp-7) auto 0; }
+.faq details {
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--sp-4) 0;
+}
+.faq summary {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--ink-900);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sp-4);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+    content: '+';
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--lime-600);
+    transition: transform var(--transition);
+}
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin-top: var(--sp-3); color: var(--ink-600); line-height: 1.65; font-size: 15px; }
+
+@media (max-width: 860px) {
+    .device { width: 200px; }
+}
