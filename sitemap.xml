@@ -38,7 +38,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://limewood.app/stillwaters</loc>
+    <loc>https://limewood.app/daily-bible-verse</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -88,7 +88,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://limewood.app/stillwaters/privacy</loc>
+    <loc>https://limewood.app/daily-bible-verse/privacy</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
