@@ -1601,6 +1601,86 @@ h1, h2, h3, h4 {
     border-radius: 22px;
     background: var(--surface-warm);
 }
+
+/* Blood Sugar Logbook — calm, tactile product presentation */
+.health-app-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    display: block;
+    box-shadow: var(--shadow-md);
+}
+
+.health-preview {
+    min-height: 610px;
+    border-radius: var(--radius-xl);
+    background: #173B33;
+    border: 1px solid rgba(23, 59, 51, 0.18);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: var(--sp-7);
+}
+
+.health-preview::before,
+.health-preview::after {
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(221, 239, 232, 0.22);
+    border-radius: 999px;
+}
+
+.health-preview::before { width: 460px; height: 460px; top: -240px; right: -160px; }
+.health-preview::after { width: 300px; height: 300px; bottom: -160px; left: -110px; }
+.health-preview .device { position: relative; z-index: 1; width: 260px; }
+
+.health-showcase-visual {
+    background: #DDEFE8;
+    overflow: hidden;
+}
+
+.health-showcase-visual::before {
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 1px solid rgba(23, 59, 51, 0.16);
+    border-radius: 50%;
+}
+
+.health-showcase-visual .device { position: relative; width: 224px; }
+
+.health-safety {
+    background: #173B33;
+    color: #fff;
+    border-radius: var(--radius-xl);
+    padding: var(--sp-7);
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: var(--sp-7);
+    align-items: center;
+}
+
+.health-safety h2 { color: #fff; margin: var(--sp-3) 0; }
+.health-safety p { color: rgba(255, 255, 255, 0.72); line-height: 1.75; }
+.health-safety .eyebrow { color: #DCEFE8; }
+.health-safety-list { display: grid; gap: 12px; }
+.health-safety-list span {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: var(--radius-md);
+    padding: 13px 16px;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    .health-preview { min-height: 510px; padding: var(--sp-5); }
+    .health-preview .device { width: 220px; }
+    .health-safety { grid-template-columns: 1fr; padding: var(--sp-6) var(--sp-5); }
+}
 .shot-caption {
     text-align: center;
     font-size: 13px;
