@@ -1221,9 +1221,14 @@ h1, h2, h3, h4 {
     margin-bottom: 2px;
 }
 
-.contact-card p, .contact-card a.c-link {
+.contact-card p, .contact-card a.c-link, .contact-card address {
     font-size: 14.5px;
     color: var(--text-secondary);
+}
+
+.contact-card address {
+    font-style: normal;
+    line-height: 1.65;
 }
 
 .contact-card a.c-link {
@@ -1459,6 +1464,14 @@ h1, h2, h3, h4 {
     color: rgba(255, 255, 255, 0.55);
     max-width: 280px;
     line-height: 1.7;
+}
+
+.footer-address {
+    margin-top: var(--sp-3);
+    font-size: 13.5px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.48);
+    line-height: 1.65;
 }
 
 .footer h4 {
