@@ -57,13 +57,13 @@ limewood/
 │   └── main.js               # header scroll, mobile nav, scroll-reveal, contact form, clean-URL
 │
 ├── renewfox/                 # ── APP DETAIL PAGES (one dir per app) ──
-│   ├── index.html            #    /renewfox
+│   ├── index.html            #    /renewfox  (LIVE)
 │   └── screenshots/          #    real Play Store screenshots (shot-01..07.png)
+├── arrow-escape/             #    /arrow-escape (LIVE) + privacy.html + screenshots/ (jpg)
+├── ascend/                   #    /ascend  (Gym Coach, LIVE) + privacy.html + screenshots/ (jpg)
 ├── wordsearch-cove/          #    /wordsearch-cove  + privacy.html
 ├── daily-bible-verse/        #    /daily-bible-verse + privacy.html  (was "Stillwaters")
-├── arrow-escape/             #    /arrow-escape     + privacy.html
 ├── riddle-trail/             #    /riddle-trail     + privacy.html
-├── ascend/                   #    /ascend  (Gym Coach) + privacy.html
 ├── blood-sugar-logbook/      #    /blood-sugar-logbook + privacy/ + screenshots/
 │
 ├── tabbatch/                 # ── EXTENSION privacy hosting (no detail page) ──
@@ -105,11 +105,11 @@ Each app has a dedicated page at `/<slug>` with: hero (identity, fact chips, sto
 | App | Slug / URL | Platform | Status | Store |
 |---|---|---|---|---|
 | **Renewfox** | `/renewfox` | iOS &amp; Android | **LIVE (Android)** | [Google Play](https://play.google.com/store/apps/details?id=app.renewfox) — `app.renewfox` |
+| **Arrow Escape** | `/arrow-escape` | Android | **LIVE** | [Google Play](https://play.google.com/store/apps/details?id=com.limewood.arrow_escape) — `com.limewood.arrow_escape` |
+| **Gym Coach** | `/ascend` | Android | **LIVE** | [Google Play](https://play.google.com/store/apps/details?id=com.limewood.gymcoach) — `com.limewood.gymcoach` (dir `ascend`, ex-"ASCEND") |
 | Word Search Cove | `/wordsearch-cove` | Android | Coming soon | — |
 | Daily Bible Verse | `/daily-bible-verse` | Android | Coming soon | — (was "Stillwaters") |
-| Arrow Escape | `/arrow-escape` | Android | Coming soon | — |
 | Riddle Trail | `/riddle-trail` | Android | Coming soon | — |
-| Gym Coach | `/ascend` | Android | Coming soon | — (dir is `ascend`, ex-"ASCEND") |
 | Blood Sugar Logbook | `/blood-sugar-logbook` | Android | Coming soon | — (SugarJournal) |
 
 ### Per-app privacy policies (used as Play Store / Web Store privacy URLs)
